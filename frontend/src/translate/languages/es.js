@@ -40,6 +40,17 @@ const messages = {
             title: "Tickets hoy: ",
           },
         },
+        messages: {
+          inAttendance: {
+            title: "En servicio"
+          },
+          waiting: {
+            title: "Esperando"
+          },
+          closed: {
+            title: "Finalizado"
+          }
+        }
       },
       connections: {
         title: "Conexiones",
@@ -198,6 +209,7 @@ const messages = {
           email: "Correo Electrónico",
           password: "Contraseña",
           profile: "Perfil",
+          whatsapp: "Conexión estándar",
         },
         buttons: {
           okAdd: "Agregar",
@@ -239,6 +251,10 @@ const messages = {
       transferTicketModal: {
         title: "Transferir Ticket",
         fieldLabel: "Escriba para buscar usuarios",
+        fieldQueueLabel: "Transferir a la cola",
+        fieldConnectionLabel: "Transferir to conexión",
+        fieldQueuePlaceholder: "Seleccione una cola",
+        fieldConnectionPlaceholder: "Seleccione una conexión",
         noOptions: "No se encontraron usuarios con ese nombre",
         buttons: {
           ok: "Transferir",
@@ -249,6 +265,7 @@ const messages = {
         pendingHeader: "Cola",
         assignedHeader: "Trabajando en",
         noTicketsTitle: "¡Nada acá!",
+        connectionTitle: "Conexión que se está utilizando actualmente.",
         noTicketsMessage:
           "No se encontraron tickets con este estado o término de búsqueda",
         buttons: {
@@ -332,6 +349,7 @@ const messages = {
           name: "Nombre",
           email: "Correo Electrónico",
           profile: "Perfil",
+          whatsapp: "Conexión estándar",
           actions: "Acciones",
         },
         buttons: {
@@ -371,7 +389,7 @@ const messages = {
         },
       },
       messagesInput: {
-        placeholderOpen: "Escribe un mensaje",
+        placeholderOpen: "Escriba un mensaje o presione '' / '' para usar las respuestas rápidas registradas",
         placeholderClosed:
           "Vuelva a abrir o acepte este ticket para enviar un mensaje.",
         signMessage: "Firmar",
